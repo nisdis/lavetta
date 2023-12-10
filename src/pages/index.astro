@@ -1,12 +1,13 @@
 ---
-import Layout from '../layouts/Page.astro'
-import Container from '../components/Container.astro';
-import SignupForm from '../components/SignupForm.astro';
+import Layout from "../layouts/Page.astro";
+import Container from "../components/Container.astro";
+// import SignupForm from "../components/SignupForm.astro";
 
 const seo = {
-  title: 'Cannonball by Little Sticks | A splash page template',
-  description: 'This is a simple splash page template built with Astro by Little Sticks',
-}
+  title: "La Vetta | Best local cuisine in Cavelossim Goa",
+  description:
+    "This restaurant serves soulful food with a delightful ambience. Momos, Shawarma we got it all.",
+};
 ---
 
 <style>
@@ -23,10 +24,20 @@ const seo = {
 <Layout seo={seo}>
   <Container narrow>
     <article class="hero__article">
-      <h1 class="fade-in">Coming Soon</h1>
-      <p class="fade-in">Be the first to know when our new site is live!</p>
-      <SignupForm />
+      <h1 class="fade-in">🍽️ <br /> La Vetta</h1>
+      <hr />
+      <p class="fade-in">
+        Your go to spot for indian fast food and Chinese delights. Momos,
+        Shawarma we got it all.
+      </p>
+      <p></p><hr /> Cavelossim Goa
+      <a
+        href="https://maps.app.goo.gl/kvcmjg4aFJrKXMn47"
+        target="_blank"
+        rel="noopener noreferrer">Location</a
+      >
+
+      <!-- <SignupForm /> -->
     </article>
   </Container>
 </Layout>
-
